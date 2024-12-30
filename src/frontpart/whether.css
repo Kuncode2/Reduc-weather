@@ -1,0 +1,30 @@
+.weather{
+    display: flex;
+    align-items: center;
+    place-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    padding-right: 11px;
+}
+.search-bar input{
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding-left: 25px;
+    color: #626262;
+    background: #ebfffc;
+    
+}
+/* whether.css */
+button {
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 20px;
+}
