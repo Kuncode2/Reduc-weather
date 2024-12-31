@@ -12,7 +12,7 @@ const whetherappslice = createSlice({
   name: "whether",
   initialState: {
     data: null,
-    // loading:false,
+    loading:false,
     error: null,
   },
   extraReducers: (builder) => {

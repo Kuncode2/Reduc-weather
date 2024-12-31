@@ -1,30 +1,102 @@
-.weather{
-    display: flex;
-    align-items: center;
-    place-self: center;
-    padding: 40px;
-    border-radius: 10px;
-    background-image: linear-gradient(45deg, #2f4680, #500ae4);
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-self: center;
+  padding: clamp(15px, 3vw, 25px);
+  border-radius: 10px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
-.search-bar{
-    display: flex;
-    align-items: center;
-    padding-right: 11px;
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
 }
-.search-bar input{
-    height: 50px;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    padding-left: 25px;
-    color: #626262;
-    background: #ebfffc;
-    
+
+.search-bar input {
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 25px;
+  color: #626262;
+  background: #ebfffc;
+  font-size: 16px;
+  width: clamp(180px, 40vw, 250px);
+  transition: all 0.3s ease;
 }
-/* whether.css */
-button {
-    background: transparent; 
-    border: none; 
-    cursor: pointer; 
-    font-size: 20px;
+
+.search-bar img {
+  width: 15px;
+  padding: 15px;
+  border-radius: 50%;
+  background: #ebfffc;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.search-bar img:hover {
+  transform: scale(1.1);
+}
+
+.weather-icon {
+  width: 120px;
+  margin: 15px 0;
+}
+
+.temperature {
+  color: #fff;
+  font-size: 60px;
+  line-height: 1;
+}
+
+.location {
+  color: #fff;
+  font-size: 32px;
+  padding-left: 20px;
+}
+
+.weather-data {
+  width: 100%;
+  margin-top: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.weather-data .col {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 20px;
+  flex: 1;
+  min-width: 120px;
+  transition: transform 0.2s ease;
+}
+
+.weather-data .col span {
+  display: block;
+  font-size: 16px;
+}
+
+.weather-data .col img {
+  width: 26px;
+  margin-top: 10px;
+}
+
+.weather-data .col:hover {
+  transform: scale(1.05);
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #fff;
 }
