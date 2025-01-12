@@ -1,4 +1,6 @@
+import Accordain from "./Accordain";
 import "./App.css";
+import Gifitingapp from "./gifitingapp";
 import Midnumber from "./midnumber";
 // import Star from "./MidStar";
 // import Todolist from "./Todolist";
@@ -14,8 +16,10 @@ function App() {
       {/* <Center/> */}
       {/* <Todolist/> */}
       {/* <Star/> */}
-      <Midnumber/>
-
+      {/* <Midnumber/> */}
+      {/* <div className="main"> 
+      <div className="idc"><Accordain/></div> */}
+      <Gifitingapp/>
     </div>
   );
 }

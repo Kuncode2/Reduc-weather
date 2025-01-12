@@ -1,5 +1,16 @@
-.app{
+/* .app{
   min-height: 100vh;
   display:grid;
-  background:#e2d4ff
+  background:rgb(54, 54, 109)
 }
+.main{
+  width: full;
+  height: 100%;
+  margin: 30px;
+}
+.idc{
+  padding: 4px;
+  padding-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+} */

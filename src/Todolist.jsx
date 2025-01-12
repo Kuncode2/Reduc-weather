@@ -25,6 +25,7 @@ const Todolist = () => {
     setCurrent(store[index]);
     setIsEditing(index);
   };
+  
 
   console.log(current);
 
@@ -43,6 +44,7 @@ const Todolist = () => {
             {data}
             <button onClick={() => handleDelete(index)}>Delete</button>
             <button onClick={() => handleEdit(index)}>Edit</button>
+            <h1></h1>
           </li>
         ))}
       </ul>
